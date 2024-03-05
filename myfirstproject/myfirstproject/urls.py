@@ -20,5 +20,6 @@ from django.urls import path, include # указываем что при пер�
 urlpatterns = [
     path('admin/', admin.site.urls),
     # '' - главная страница
-    path('', include('main_page.urls')) # при переходе на главную страницу вызывается файл urls в приложении main_page
+    path('', include('main_page.urls')), # при переходе на главную страницу вызывается файл urls в приложении main_page
+    path('', include('logins.urls'))
 ]
